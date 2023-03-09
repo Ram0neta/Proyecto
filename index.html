@@ -11,19 +11,36 @@
 </head>
 
 <body>
-    
+
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <h2>Nombre de la Empresa</h2>
-                </li>
-                <li> <a href="./index.html">Inicio</a></li>
-                <li> <a href="./pages/menu.html">Menu</a></li>
-                <li> <a href="./pages/promos.html">Promos</a></li>
-                <li> <a href="./pages/sucursales.html">Sucursales</a></li>
-                <li> <a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 active" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 active" href="./pages/menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 active" href="./pages/promos.html">Promos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 active" href="./pages/sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 active" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -73,11 +90,11 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, excepturi molestiae expedita est
                 nobis labore commodi voluptate!
             <form>
-                    <label for="email">Correo Electronico</label>
-                    <input type="email" id="email" required>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" required>
-                    <button>Registrarse</button>               
+                <label for="email">Correo Electronico</label>
+                <input type="email" id="email" required>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required>
+                <button>Registrarse</button>
             </form>
             </p>
         </section>
