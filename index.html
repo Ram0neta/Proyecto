@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -45,39 +45,55 @@
     </header>
 
     <main>
-        <section class="eslogan">
-            <h1>Eslogan de la Empresa</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque aut aliquid, excepturi voluptas harum
-                eum omnis quod veritatis voluptate aliquam at quas exercitationem expedita officia.</p>
-
-            <img src="./images/foto-menu.jpg" alt="">
-        </section>
-
-        <section class="promos">
-            <h2>¡Elegi una de nuestras promos!</h2>
-            <div id="promo1">
-                <h3>Promo 1</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, eum. Reiciendis placeat dignissimos
-                    accusantium cupiditate!</p>
-                <a href="">Ver más</a>
-
+        <div class="card" id="eslogan" style="padding-left: 70px;">
+            <div class="row cols-6">
+                <div class="col-6 col-md-6 col-sm-12">
+                    <h1>Eslogan de la Empresa</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque aut aliquid, excepturi
+                        voluptas harum
+                        eum omnis quod veritatis voluptate aliquam at quas exercitationem expedita officia.</p>
+                    <a href="#" class="btn btn-light btn-dark">Ver mas</a>
+                </div>
+                <div class="col col-md-6 col-sm-12 ">
+                    <img src="./images/foto-menu.jpg" class="rounded-5" alt="menu">
+                </div>
             </div>
-            <div id="promo2">
-                <h3>Promo 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iste itaque in eligendi adipisci enim
-                    deserunt facere!</p>
-                <a href="">Ver más</a>
+        </div>
+
+        <div class="card" id="promos" style="padding-left: 70px;">
+            
+                <div class="container col-8">
+                    <h2 style="padding: 40px;">¡Elegi una de nuestras promos!</h2>
+                </div>
+                <div class="row" style="width: 900px;" >
+                
+                    <div class="card-body col-lg-3 col-md-4 col-sm-8" style="background-color:rgb(235, 235, 235); border: solid 1px black;">
+                        <h4 class="card-title">Promo 1</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium ea
+                            mollitia exercitationem amet. Neque!</p>
+                        <a href="#" class="btn btn-light btn-dark">Ver mas</a>
+                        <img class="img-fluid" src="./images/imagedefault.jpg" alt="Card image">
+                    </div>
+                    <div class="card-body col-lg-3 col-md-4 col-sm-8" style="background-color:rgb(235, 235, 235); border: solid 1px black;">
+                        <h4 class="card-title">Promo 2</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium ea
+                            mollitia exercitationem amet. Neque!</p>
+                        <a href="#" class="btn btn-light btn-dark">Ver mas</a>
+                        <img class="img-fluid rounded-4" src="./images/imagedefault.jpg" alt="Card image">
+                    </div>
+                    <div class="card-body col-lg-3 col-md-4 col-sm-8" style="background-color:rgb(235, 235, 235); border: solid 1px black;">
+                        <h4 class="card-title">Promo 3</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium ea
+                            mollitia exercitationem amet. Neque!</p>
+                        <a href="#" class="btn btn-light btn-dark">Ver mas</a>
+                        <img class="img-fluid rounded-4" src="./images/imagedefault.jpg" alt="card image" >
+                    </div>
+                </div>
             </div>
-            <div id="promo3">
-                <h3>Promo 3</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus quia eveniet ipsum temporibus
-                    dolor?</p>
-                <a href="">Ver más</a>
-            </div>
-        </section>
+        </div>
 
         <section class="sucursales">
-            <h2>Nuestras Sucursales</h2>
+            <h2 style="padding: 50px;">Nuestras Sucursales</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde sapiente quo iure dicta incidunt
                 laboriosam quod nam accusamus animi et repellendus, doloribus magnam nobis.</p>
             <iframe

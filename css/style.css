@@ -3,3 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+#eslogan {
+    padding-top: 90px;
+    
+}
+
+#eslogan p {
+    padding-top: 70px ;
+}
