@@ -7,21 +7,98 @@
     <title>Pagina proyecto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <h1>Hola Mundo</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus natus perferendis eveniet delectus commodi
-        facere labore nisi? Error fugiat iusto doloremque odio exercitationem perferendis debitis.</p>
-     <div>
-        <p>Lorem ipsum dolor sit amet.</p>
-     </div>   
-     
+    
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <h2>Nombre de la Empresa</h2>
+                </li>
+                <li> <a href="./index.html">Inicio</a></li>
+                <li> <a href="./pages/menu.html">Menu</a></li>
+                <li> <a href="./pages/promos.html">Promos</a></li>
+                <li> <a href="./pages/sucursales.html">Sucursales</a></li>
+                <li> <a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="eslogan">
+            <h1>Eslogan de la Empresa</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque aut aliquid, excepturi voluptas harum
+                eum omnis quod veritatis voluptate aliquam at quas exercitationem expedita officia.</p>
+
+            <img src="./images/foto-menu.jpg" alt="">
+        </section>
+
+        <section class="promos">
+            <h2>¡Elegi una de nuestras promos!</h2>
+            <div id="promo1">
+                <h3>Promo 1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, eum. Reiciendis placeat dignissimos
+                    accusantium cupiditate!</p>
+                <a href="">Ver más</a>
+
+            </div>
+            <div id="promo2">
+                <h3>Promo 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iste itaque in eligendi adipisci enim
+                    deserunt facere!</p>
+                <a href="">Ver más</a>
+            </div>
+            <div id="promo3">
+                <h3>Promo 3</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus quia eveniet ipsum temporibus
+                    dolor?</p>
+                <a href="">Ver más</a>
+            </div>
+        </section>
+
+        <section class="sucursales">
+            <h2>Nuestras Sucursales</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde sapiente quo iure dicta incidunt
+                laboriosam quod nam accusamus animi et repellendus, doloribus magnam nobis.</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204306.42201658443!2d-60.427114484291806!3d-36.85952840845653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959445daae9e90a3%3A0xd11aadb313dbf072!2sOlavarr%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1675896190075!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="registrarse">
+            <h2>¡Registrate en nuestra pagina!</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, excepturi molestiae expedita est
+                nobis labore commodi voluptate!
+            <form>
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" id="email" required>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+                    <button>Registrarse</button>               
+            </form>
+            </p>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="pie-de-pagina">
+            <ul>
+                <p>Nuestro Contacto</p>
+                <li><a id="primerlink" href="www.whatsapp.com/">Whatsapp</a></li>
+                <li><a href="www.Facebook.com/NombreEmpresa">Facebook</a></li>
+                <li><a href="www.Instagram.com/NombreEmpresa">Instagram</a></li>
+                <li><a href="www.Twitter/NombreEmpresa">Twitter</a></li>
+                <h4>Nombre Empresa © 2023. All rights reserved.</h4>
+            </ul>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>
