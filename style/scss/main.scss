@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 #eslogan {
@@ -37,16 +38,3 @@ nav {
     display: block;
     align-items: center;
 }
-
-@media screen and(max-width:480px) {
-    main {
-    grid-template-areas:
-    "menu1"
-    "menu2"
-    "menu3";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    }
- @media screen (min-width:481px)and(max-width:768) {
-    
- }   
