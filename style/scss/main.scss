@@ -1,9 +1,13 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
-}
+@import "./base/reset";
+@import "./components/card";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/navbar";
+@import "./pages/contacto";
+@import "./pages/menu";
+@import "./pages/promos";
+@import "./pages/sucursales";
+
 
 #eslogan {
     padding-top: 90px;
