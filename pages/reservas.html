@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/css/style.css">
+    <link rel="shortcut icon" href="../images/favicon.jpg" type="image/x-icon">
 </head>
 
 
@@ -42,54 +44,62 @@
             </div>
         </nav>
     </header>
+    <div>
+        <h2 class="text-center" style="padding: 60px; font-family: fantasy;">¡Podes reservar tu lugar aca!</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form class="form-horizontal" method="post">
+                        <fieldset>
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i
+                                        class="fa fa-user bigicon"></i></span>
+                                <div class="col-md-8 mx-5 p-2">
+                                    <input id="fname" name="name" type="text" placeholder="Nombre y apellido"
+                                        class="form-control">
+                                </div>
+                            </div>
 
-    <main>
-        <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
-            <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3 text-center">
-                <div class="col" id="menu1">
-                    <div class="card h-100 shadow-sm"> <img src="../images/imagedefault.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Menu 1</h3>
-                            <h5 class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                                quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit
-                                ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
-                            <div class="text-center my-4"> <a href="#" class="btn btn-dark">Ver mas</a> </div>
-                        </div>
-                    </div>
-                </div>
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i
+                                        class="fa fa-envelope-o bigicon"></i></span>
+                                <div class="col-md-8 mx-5 p-2">
+                                    <input id="email" name="email" type="text" placeholder="Correo electronico"
+                                        class="form-control">
+                                </div>
+                            </div>
 
-                <div class="col" id="menu2">
-                    <div class="card h-100 shadow-sm"> <img src="../images/imagedefault.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Menu 2</h3>
-                            <h5 class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                                quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit
-                                ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
-                            <div class="text-center my-4"> <a href="#" class="btn btn-dark">Ver mas</a> </div>
-                        </div>
-                    </div>
-                </div>
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i
+                                        class="fa fa-phone-square bigicon"></i></span>
+                                <div class="col-md-8 mx-5 p-2">
+                                    <input id="phone" name="phone" type="text" placeholder="Numero" class="form-control">
+                                </div>
+                            </div>
 
-                <div class="col" id="menu3">
-                    <div class="card h-100 shadow-sm"> <img src="../images/imagedefault.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Menu 3</h3>
-                            <h5 class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                                quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit
-                                ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
-                            <div class="text-center"> <a href="#" class="btn btn-dark">Ver mas</a> </div>
-                            <div class="clearfix mb-1"> <span class="float-start"><i
-                                        class="far fa-question-circle"></i></span> <span class="float-end"><i
-                                        class="fas fa-plus"></i></span> </div>
-                        </div>
-                    </div>
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i
+                                        class="fa fa-pencil-square-o bigicon"></i></span>
+                                <div class="col-md-8 mx-5">
+                                    <textarea class="form-control" id="message" name="message"
+                                        placeholder="Si necesita aclarar algo, hagalo aquí"
+                                        rows="7"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group" style="padding: 50px;">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
 
     <footer class="text-center text-white" style="background-color: #232323">
 
@@ -130,7 +140,7 @@
             </section>
         </div>
         <div class="text-center p-1">
-            <a> © Todos los derechos reservados © </a>
+            <a>  Girmet 2023 | Todos los derechos reservados © </a>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
