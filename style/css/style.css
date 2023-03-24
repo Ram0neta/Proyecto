@@ -68,4 +68,11 @@ nav h2 {
   padding: 20px;
 }
 
+#sucursales {
+  font-family: "Times New Roman", Times, serif;
+}
+#sucursales h2 {
+  font-family: fantasy;
+}
+
 /*# sourceMappingURL=style.css.map */
