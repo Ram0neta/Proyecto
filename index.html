@@ -7,15 +7,21 @@
     <title>RESTOBAR GIRMET | Comida de calidad</title>
     <meta name="description"
         content="Restobar Girmet, acompañandote desde hace mas de 10 años, conoce nuestros platos, y disfruta como se debe de la comida.">
-        <meta name="keywords" content="girmet, comida, restaurant, restobar, cena, almuerzo, menu, plato del dia, cocina, sucursales, reserva, olavarria, tandil, buenos aires, mar del plata ">
+    <meta name="keywords"
+        content="girmet, comida, restaurant, restobar, cena, almuerzo, menu, plato del dia, cocina, sucursales, reserva, olavarria, tandil, buenos aires, mar del plata ">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style/css/style.css">
     <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 
 <body>
-
+                                 <!-- NAVBAR -->
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container">
@@ -47,9 +53,9 @@
             </div>
         </nav>
     </header>
-
+                                        <!-- ESLOGAN  -->
     <main style="overflow-x: hidden">
-        <div class="text-center" id="eslogan">
+        <div data-aos="flip-up" data-aos-duration="500" class="text-center" id="eslogan">
             <div class="">
                 <div class="cols-12">
                     <h1>GIRMET </h1>
@@ -59,15 +65,15 @@
                         experiencia a la hora de comer. Contamos con 4 sucursales dentro de la provincia de
                         buenos aires </p>
                 </div>
-                <div class="cols-12" style="padding-top: 80px;"><a href="./pages/menu"
+                <div class="cols-12" style="padding-top: 80px;"><a href="../pages/menu.html"
                         class="btn btn-light btn-light">Ver el Menú completo</a></div>
 
 
             </div>
         </div>
-
-        <div class="plato-del-dia">
-            <div>
+                             <!-- PLATO DEL DIA -->
+        <div data-aos="fade-up" data-aos-duration="2000" class="plato-del-dia">
+            <div >
                 <h2 class="text-center cols-8">Plato del dia</h2>
             </div>
             <div class="container">
@@ -81,11 +87,13 @@
                 <a href="" class="btn btn-outline-secondary">$2400</a>
             </div>
         </div>
+                                <!-- SUCURSALES Y MAPA IFRAME -->
         <div class="container" id="sucursales" style="padding-top: 100px; ">
             <div class="row">
-                <div class="col-lg-4 col-md-7 col-sm-10">
+                <div data-aos="fade-right"  data-aos-duration="2000"class="col-lg-4 col-md-7 col-sm-10">
                     <h2 style="padding: 50px;">Nuestras Sucursales</h2>
-                    <p>Nuestra larga trayectoria, nos hizo distribuirnos por toda la provincia de buenos aires, es por eso que contamos con cuatro surcursales.</p>
+                    <p>Nuestra larga trayectoria, nos hizo distribuirnos por toda la provincia de buenos aires, es por
+                        eso que contamos con cuatro surcursales.</p>
                     <ul>
                         <li>Olavarria</li>
                         <li>Tandil</li>
@@ -93,16 +101,17 @@
                         <li>Palermo</li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-7 col-sm-10"><iframe
+                <div data-aos="fade-left" data-aos-duration="2000" class="col-lg-4 col-md-7 col-sm-10"><iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204306.42201658443!2d-60.427114484291806!3d-36.85952840845653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959445daae9e90a3%3A0xd11aadb313dbf072!2sOlavarr%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1675896190075!5m2!1ses!2sar"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
-        <div class="container mt-3" id="registrarse" style="padding-left: 80px; padding-top: 100px;">
+                                    <!-- REGISTRO FORMULARIO -->
+        <div data-aos="flip-up" data-aos-duration="1000" class="container mt-3" id="registrarse" style="padding-left: 80px; padding-top: 100px;">
             <h2>¡Registrate en nuestra pagina!</h2>
-            <form>
+            <form style="padding-bottom: 100px;">
                 <div class="mb-3 col-4 col-md-6 col-sm-8">
                     <label for="email">Email:</label>
                     <input type="email" class="form-control" id="email" placeholder="Ingrese su email" name="email">
@@ -120,7 +129,7 @@
         </div>
 
     </main>
-
+                            <!-- FOOTER -->
     <footer class="text-center text-white" style="background-color: #232323">
 
         <div class="container">
@@ -160,13 +169,17 @@
             </section>
         </div>
         <div class="text-center p-1">
-            <a>  Girmet 2023 | Todos los derechos reservados © </a>
+            <a> Girmet 2023 | Todos los derechos reservados © </a>
         </div>
     </footer>
-
+                            <!-- SCRIPTS DE BOOTSTRAP Y AOS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
