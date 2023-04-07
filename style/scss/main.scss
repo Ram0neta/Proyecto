@@ -1,4 +1,3 @@
-
 /* Imports */
 
 @import "./base/reset";
@@ -11,3 +10,74 @@
 @import "./pages/reservas";
 @import "./pages/sucursales";
 
+
+#sobre-nosotros{
+     h2 {
+    text-align: center;
+    font-family: fantasy;
+    padding: 50px;
+    font-size: 230%;
+}
+
+.contenedor1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    }
+    p { 
+        width: 80%;
+        margin: 50px;
+        font-size: 120%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    img {
+        
+        float: right;
+        width: 110%;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px rgb(29, 29, 29);
+        max-width: 1400px;
+        min-width: 300px;
+        
+       
+    }
+}
+@media (max-width: 900px) {
+    .contenedor1 {
+        flex-direction: column;
+        align-content: center;
+        width: 70%;
+    }
+}
+
+.contenedor2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   
+    p { 
+        width: 80%;
+        margin: 50px;
+        font-size: 120%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    img {
+        float: right;
+        width: 110%;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px rgb(29, 29, 29);
+        max-width: 1200px;
+        min-width: 300px;
+    }
+ }
+@media (max-width: 900px) {
+    .contenedor2 {
+        flex-direction: column;
+        align-content: center;
+        width: 70%;
+    }
+}
